@@ -5,8 +5,8 @@ plugins {
 }
 
 version = '0.1-1.19.4'
-group = 'net.kenshitwentythree.brave_new_world' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'brave_new_world'
+group = 'net.kenshitwentythree.bravenewworld' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'bravenewworld'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -49,7 +49,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'brave_new_world'
+            property 'forge.enabledGameTestNamespaces', 'bravenewworld'
 
             mods {
                 brave_new_world {
@@ -65,7 +65,7 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            property 'forge.enabledGameTestNamespaces', 'brave_new_world'
+            property 'forge.enabledGameTestNamespaces', 'bravenewworld'
 
             mods {
                 brave_new_world {
@@ -84,7 +84,7 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            property 'forge.enabledGameTestNamespaces', 'brave_new_world'
+            property 'forge.enabledGameTestNamespaces', 'bravenewworld'
 
             mods {
                 brave_new_world {
@@ -101,7 +101,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'brave_new_world', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'bravenewworld', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
                 brave_new_world {
@@ -146,7 +146,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "brave_new_world",
+                "Specification-Title"     : "bravenewworld",
                 "Specification-Vendor"    : "brave_new_worldsareus",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,

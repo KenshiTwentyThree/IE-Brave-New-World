@@ -1,6 +1,7 @@
-package net.kenshitwentythree.brave_new_world;
+package net.kenshitwentythree.bravenewworld;
 
 import com.mojang.logging.LogUtils;
+import net.kenshitwentythree.bravenewworld.common.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -17,7 +18,7 @@ import org.slf4j.Logger;
 public class BraveNewWorld {
 
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "brave_new_world";
+    public static final String MOD_ID = "bravenewworld";
 
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
@@ -25,6 +26,8 @@ public class BraveNewWorld {
     public BraveNewWorld() {
 
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
